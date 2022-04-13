@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&family=Roboto+Condensed&display=swap');
+
+:root {
+  --light-red: #f53c4857;;
+  --dark-red: #910710c5;
+  --color-primary-100: #dee3ea;
+  --color-primary-700: #242c37;
+  --color-primary-800: #151a21;
+  --color-primary-900: #0b0e11;
+  --light-grey: #6c757d;
+  --gradient: rgba(211, 9, 9, 0.025);
+}
+body {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  background: var(--color-primary-900);
+  color:var(--color-primary-100);
+}
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a, button {
+  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+}
+
+.link-red {
+  text-decoration: none;
+  color:var(--light-red);
+}
+.link-red:hover {
+  color: var(--dark-red);
+}
+/*NAVBAR*/
+.navbar-toggler {
+  color: white !important;
+  border: unset !important;
+}
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.25rem var(--dark-red);
+}
+.navbar {
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+}
+.nav-link {
+  margin-right: 0.25rem;
+  
+}
+a.nav-link {
+  text-decoration: none;
+  color: var(--color-primary-100);
+  font-size: 1rem;
+  line-height: 1;
+}
+.left-bar{
+  border-left: 1px solid var(--color-primary-100);
+}
+a.nav-link:hover {
+  color: var(--light-grey);
+}
+header .btn-search {
+  background-color: var(--dark-red) !important;
+}
+header .btn-search:hover {
+  background-color: var(--light-red) !important;
+}
+
+
+.home-background {
+  overflow:hidden;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.home-background::after, .home-background::before {
+  width: 100%;
+  content: "";
+  position:absolute;
+}
+.home-background::before {
+  z-index: -2;
+  height: calc(100% - 2px);
+  background: url('../img/background.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.home-background::after {
+  z-index: -1;
+  height: 45%;
+  background: linear-gradient(180deg, rgba(11,14,17, 0.025) 0%, rgba(11,14,17,1) 90%, rgba(11,14,17,1) 100%);
+  bottom: 0;
+  left: 0;
+}
+
+
+/* SECTION BASE STYLE */
+.page-section {
+  margin-bottom: 6rem;
+}
+.section-title {
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+.section-btn{
+  background-color: var(--color-primary-800) !important; 
+}
+.section-btn:hover {
+    color: var(--dark-red) !important;
+}
+.section-span{
+  font-weight: bold;
+}
+section p, h1, h2, h3, h4, h5, h6, button, select {
+  color: var(--color-primary-100) !important;
+}
+.film-description {
+  min-height: 385px;
+  max-height: 400px;
+}
+
+/* RELEASES*/
+#section-release p {
+  font-size: 0.85rem;
+  line-height: 1.2;
+}
+
+#section-release h3 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+#section-release h2{
+  text-align: center;
+  margin-top: 3rem;
+}
+.interview-container {
+  margin-top: 2rem;
+}
+/* HIGHLIGHTED */
+#section-highlighted .category-select{
+  color:white;
+  background-color: var(--color-primary-800);
+}
+
+#section-highlighted .card-img-top {
+  max-height: 363px !important;
+}
+
+#section-highlighted .film-card {
+  background-color: var(--color-primary-800);
+}
+
+#section-highlighted .film-card p{
+  font-size: 0.8rem;
+}
+#section-highlighted .film-card:hover{
+  color: var(--dark-red);
+}
+
+
+
+/* RATING */
+#section-rating img {
+  object-fit: cover;
+  object-position: center center;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 1px white solid;
+}
+/*INTERVIEWS*/
+#section-interview p{
+  font-size: 0.8rem;
+}
+/* NEWS */
+#medium-news {
+  border-top: 1px var(--color-primary-100) solid;
+  border-bottom: 1px var(--color-primary-100) solid;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+.news-description {
+  font-size: 0.7rem;
+}
+#last-news{
+  margin-top: 1.5rem;
+  margin-bottom: 4rem;
+}
+.fab{
+  color: var(--color-primary-100);
+}
+.fab:hover{
+  color: var(--dark-red);
+}
+
+/* GRADIENT */
+.gradient {
+  overflow:hidden;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.gradient::after, .gradient::before {
+  width: 100%;
+  content: "";
+  position:absolute;
+}
+.gradient::before {
+  z-index: -2;
+  height: calc(100% - 2px);
+  background-color: var(--color-primary-800);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.gradient::after {
+  z-index: -1;
+  height: 8%;
+  background: linear-gradient(180deg, rgba(11,14,17, 0.025) 0%, rgba(11,14,17,1) 90%, rgba(11,14,17,1) 100%);
+  bottom: 0;
+  left: 0;
+}
+
+.pre-gradient-background {
+  overflow:hidden;
+  margin-bottom: 0;
+  position: relative;
+  height: 50px;
+}
+
+.pre-gradient-background::after, .pre-gradient-background::before {
+  width: 100%;
+  content: "";
+  position:absolute;
+}
+
+.pre-gradient-background::after {
+  z-index: -2;
+  height: 100%;
+  background: linear-gradient(180deg,  var(--gradient) 0%, var(--color-primary-800) 90%, var(--color-primary-800) 100%);
+  bottom: 0;
+  left: 0;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.5;
+    bottom: -50px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 1070px){
+  .nav-link {
+    margin-right: 0.15rem;
+    border-left: 0px;
+    border-right: 0px;
+  }
+  a.nav-link {
+    font-size: 0.9rem;
+    line-height: 0.9;
+  }
+  
+}
+@media only screen and (min-width: 375px) and (max-width: 578px){
+  #section-highlighted .card-img-top {
+    max-height: 705px !important;
+  }
+  .section-title{
+    font-size: 1.5rem;
+  }
+  .film-description {
+    max-height: 800px;
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 375px){
+  
+  .film-description {
+    max-height: 800px;
+    height: 550px;
+  }
+}
+@media (max-width: 770px){
+  #section-rating img {
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+@media only screen and (max-width: 998px) and (min-width: 578px){
+  #section-highlighted .card-img-top {
+    max-height: 462px !important;
+  }
+  .section-title{
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 998px){
+  #section-highlighted .card-img-top {
+    max-height: 635px !important;
+  }
+}
+@media (max-width: 1200px){
+  #section-highlighted .card {
+    margin-bottom: 1rem;
+  }
+}
+
+header {
+  background-color: var(--color-primary-900) !important;
+}
+
+footer {
+  background-color: var(--color-primary-800);
+  padding-bottom: 1rem;
+}
