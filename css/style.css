@@ -183,6 +183,9 @@ section p, h1, h2, h3, h4, h5, h6, button, select {
 .news-description {
   font-size: 0.7rem;
 }
+.news-badge{
+  margin-right: 0.5rem;
+}
 #last-news{
   margin-top: 1.5rem;
   margin-bottom: 4rem;
