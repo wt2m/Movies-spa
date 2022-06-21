@@ -57,10 +57,10 @@ a.nav-link {
 a.nav-link:hover {
   color: var(--light-grey);
 }
-header .btn-search {
+.btn-search {
   background-color: var(--dark-red) !important;
 }
-header .btn-search:hover {
+.btn-search:hover {
   background-color: var(--light-red) !important;
 }
 
@@ -105,6 +105,13 @@ header .btn-search:hover {
   background-color: var(--color-primary-800) !important; 
 }
 .section-btn:hover {
+    color: var(--dark-red) !important;
+}
+
+.leia-btn{
+  background-color: wheat !important; 
+}
+.leia-btn:hover {
     color: var(--dark-red) !important;
 }
 .section-span{
@@ -313,7 +320,7 @@ section p, h1, h2, h3, h4, h5, h6, button, select {
 }
 
 header {
-  background-color: var(--color-primary-900) !important;
+  background-color: var(--color-primary-800) !important;
 }
 
 footer {

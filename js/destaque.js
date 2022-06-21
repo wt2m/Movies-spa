@@ -5,7 +5,7 @@ var qnt = 0;
 var texto = '';
 function filmeDestaque() {
   $.ajax({
-    url: TMDB_ENDPOINT_BASE + '/movie/now_playing',
+    url: TMDB_ENDPOINT_BASE + '/movie/now_playing?language=pt-BR',
     data: {
       api_key: '180ac44fc5ed0b884b70d3cc85f35e97',
     }
@@ -21,9 +21,9 @@ function filmeDestaque() {
       date = data.results[i].release_date;
       const value = data.results[i].id;
       const valueEncode = encodeURI(value);
-      const link = '../pages//pesquisa-retorno.html?q=' + valueEncode;
+      const link = 'pesquisa.html?q=' + valueEncode;
       texto += `
-      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 mt-4">
       <div class="card film-card" width="100%">
         <img src="${imagem}" class="card-img-top" alt="${titulo}">
         <div class="card-body">
@@ -31,25 +31,11 @@ function filmeDestaque() {
           <p class="card-text">${descricao}</p
           <p class="card-data"><b>Avaliação:</b> ${aval}</p>
           <p class="card-data"><b>Lançamento:</b> ${date}</p>
-          <a href="${link}" class="btn btn-primary" style="float:right;">Leia mais</a>
+          <a href="${link}" class="btn btn-sm leia-btn" style="float:right;">Leia mais</a>
         </div>
       </div>
     </div>
       `;
-      /*
-      </div>
-      <div class="col-3"><div class="card card_poster" style="width: 18rem;">
-      <img src="${imagem}" class="card-img-top" alt="${titulo}">
-      <div class="card-body">
-          <h5 class="card-title"><b>${titulo}</b></h5>
-          <p class="card-text">${descricao}</p>
-              <p class="card-data"><b>Avaliação:</b> ${aval}</p>
-              <p class="card-data"><b>Lançamento:</b> ${date}</p>
-          <a href="${link}" class="btn btn-primary">Leia mais</a>
-      </div>
-  </div>
-      
-      */
     }
     $('#lista-destaques').html(texto);
   });
@@ -66,7 +52,7 @@ function carregarMais(){
     date = data.results[i].release_date;
     const value = data.results[i].id;
     const valueEncode = encodeURI(value);
-    const link = '../pages//pesquisa-retorno.html?q=' + valueEncode;
+    const link = 'pesquisa.html?q=' + valueEncode;
     texto += `
         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 mt-2">
           <div class="card film-card" width="100%">
@@ -76,7 +62,7 @@ function carregarMais(){
               <p class="card-text">${descricao}</p
               <p class="card-data"><b>Avaliação:</b> ${aval}</p>
               <p class="card-data"><b>Lançamento:</b> ${date}</p>
-              <a href="${link}" class="btn btn-primary" style="float:right;">Leia mais</a>
+              <a href="${link}" class="btn btn-sm leia-btn" style="float:right;">Leia mais</a>
             </div>
           </div>
         </div>

@@ -22,537 +22,515 @@
 </head>
 
 <body>
-  <div class="home-background">
-    <header id="header">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand me-2 me-sm-5" href="#">
-            <img src="img/logo-pequeno.jpg" height="100" alt="Portal de Filmes">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
-            aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars h1 mb-0"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbar">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-              <a class="nav-link" aria-current="page" href="#section-release">Lançamentos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link left-bar" href="#section-highlighted">Em destaque</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link left-bar" href="#section-rating">Avaliações</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link left-bar" href="#section-interview">Entrevistas & Making of</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link left-bar" href="#section-news">Novidades</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <div class="input-group mb-3">
-                <input type="text" class="form-control" type="search" placeholder="Pesquisar filme" aria-label="Search"
-                  aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                  <button class="btn btn-search" type="submit"><i class="fas fa-search"></i></button>
-                </div>
+  <header id="header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand me-2 me-sm-5" href="#">
+          <img src="img/logo-pequeno.jpg" height="100" alt="Portal de Filmes">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+          aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars h1 mb-0"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <a class="nav-link" aria-current="page" href="#section-release">Lançamentos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link left-bar" href="#section-highlighted">Em destaque</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link left-bar" href="#section-rating" onclick="desabilitaSearch()">Avaliações</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link left-bar" href="#section-interview">Entrevistas & Making of</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link left-bar" href="#section-news">Novidades</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <div class="input-group mb-3">
+              <input  id="input-pesquisa" type="text" class="form-control" type="search" placeholder="Pesquisar filme" aria-label="Search"
+                aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-search" onclick="botaoPesquisa()"><i class="fas fa-search"></i></button>
               </div>
-            </form>
+            </div>
           </div>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
+  
+    
 
     <!--
       =============================================================================
       =================================Releases====================================
       =============================================================================
     -->
-
-    <div class="container">
-      <section class="page-section text-start pt-0" id="section-release">
-        <h2 class="section-title">Lançamentos</h2>
-        <div class="row">
-          <div id="carousel-releases" class="carousel carousel-gallery slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carousel-releases" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carousel-releases" data-bs-slide-to="1" aria-label="Slide 2" />
-              <button type="button" data-bs-target="#carousel-releases" data-bs-slide-to="2" aria-label="Slide 3" />
-              <button type="button" data-bs-target="#carousel-releases" data-bs-slide-to="3" aria-label="Slide 4" />
-              <button type="button" data-bs-target="#carousel-releases" data-bs-slide-to="4" aria-label="Slide 5" />
-            </div>
-            <!-- 1 Filme -->
-            <div class="carousel-inner">
-              <div class="carousel-item active" id="first">
-                <div class="row" style="margin-bottom: 35px;">
-                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6" style="height: 400px;">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/eGR1i-0l878"
-                      title="Pink Flamingos" frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen></iframe>
-                  </div>
-                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 film-description" >
-                    <h3 height="100% ">
-                      Pink Flamingos
-                    </h3>
-                    <div class="col-12">
-                      <p><span class="section-span">Sinopse:</span> Divine, seu louco filho hippie Crackers e sua obesa mãe
-                        ostentam honrosa e orgulhosamente o título de "pessoas mais imundas do mundo". Quando o reinado
-                        é ameaçado pelo casal Connie e Raymond Marble, eles tentam de todas as formas provar serem os
-                        legítimos merecedores da classificação, iniciando uma bizarra competição sem limites.</p>
-                    </div>
-                    <div class="row ">
-                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                        <p><span class="section-span">Direção:</span> John Waters </p>
-                      </div>
-                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                        <p><span class="section-span">Roteiro:</span> John Waters</p>
-                      </div>
-                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                        <p><span class="section-span">Estreia:</span> 17/03/1972</p>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <p><span class="section-span">Elenco:</span> <br> John Waters, Divine, Mink</p>
-                    </div>
-                    <div class="col-12">
-                      <p><span class="section-span">Avaliação:</span> ★★★☆☆</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Segundo filme-->
-              <div class="carousel-item" id="second">
-                <div class="row" style="margin-bottom: 35px;">
-                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6" style="height: 400px;">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/wqbZlAEUb5w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 film-description">
-                    <h3 height="100% ">
-                      The House
-                    </h3>
-                    <div class="col-12">
-                      <p><span class="section-span">Sinopse:</span> The House é uma série da Netflix que é, na verdade, apenas um longo episódio de 1:37 horas. O filme/seriado é dividido em três capítulos completamente diferentes do outro, mas com um elemento em comum: uma casa. O primeiro capítulo é situado em 1800, onde o pobre Raymond conhece um misterioso benfeitor que promete restaurar ele e sua família ao seu antigo status.</p>
-                    </div>
-                    <div class="row ">
-                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                        <p><span class="section-span">Direção:</span> Emma de Swaef, Niki Lindroth Von Bahr, Paloma Baeza</p>
-                      </div>
-                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                        <p><span class="section-span">Roteiro:</span> Enda Walsh</p>
-                      </div>
-                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                        <p><span class="section-span">Estreia:</span> 2022</p>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <p><span class="section-span">Elenco:</span> <br> Helena Bonham Carter, Matthew Goode, Claudie Blakley</p>
-                    </div>
-                    <div class="col-12">
-                      <p><span class="section-span">Avaliação:</span> ★★★★★</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Terceiro filme-->
-              <div class="carousel-item" id="third">
-                <div class="row" style="margin-bottom: 35px;">
-                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6" style="height: 400px;">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AfPqH9ltHgw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 film-description" >
-                    <h3 height="100% ">
-                      Turma da Mônica - Uma Aventura no Tempo
-                    </h3>
-                    <div class="col-12">
-                      <p><span class="section-span">Sinopse:</span> Franjinha está construindo uma máquina do tempo e precisa reunir moléculas dos quatro elementos: ar, água, fogo e terra. Mônica joga Sansão e, sem querer, acerta o aparelho, espalhando os elementos. Agora a turma precisa consertá-la.</p>
-                    </div>
-                    <div class="row ">
-                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                        <p><span class="section-span">Direção:</span>  Mauricio de Sousa</p>
-                      </div>
-                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                        <p><span class="section-span">Roteiro:</span>  Mauricio de Sousa</p>
-                      </div>
-                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                        <p><span class="section-span">Estreia:</span> 18/02/2007</p>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <p><span class="section-span">Elenco:</span> <br> Helena Bonham Carter, Matthew Goode, Claudie Blakley</p>
-                    </div>
-                    <div class="col-12">
-                      <p><span class="section-span">Avaliação:</span> ★★★★☆</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Quarto filme-->
-              <div class="carousel-item" id="third">
-                <div class="row" style="margin-bottom: 35px;">
-                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6" style="height: 400px;">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/GZfuWMDEJpw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 film-description" >
-                    <h3 height="100% ">
-                      Evangelion: 3.0+1.0 Thrice Upon a Time
-                    </h3>
-                    <div class="col-12">
-                      <p><span class="section-span">Sinopse:</span> Depois de perder a vontade de viver, Shinji Ikari renasce e aprende o significado da esperança. A WILLE se posiciona para impedir o Impacto Final.</p>
-                    </div>
-                    <div class="row ">
-                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                        <p><span class="section-span">Direção:</span> Hideaki Anno, Kazuya Tsurumaki</p>
-                      </div>
-                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                        <p><span class="section-span">Roteiro:</span> Hideaki Anno</p>
-                      </div>
-                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                        <p><span class="section-span">Estreia:</span> 08/03/2021</p>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <p><span class="section-span">Elenco:</span> <br> Megumi Hayashibara, Megumi Ogata, Yûko Miyamura</p>
-                    </div>
-                    <div class="col-12">
-                      <p><span class="section-span">Avaliação:</span> ★★★☆☆</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Quinto filme-->
-              <div class="carousel-item" id="third">
-                <div class="row" style="margin-bottom: 35px;">
-                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6" style="height: 400px;">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/4OiMOHRDs14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 film-description" >
-                    <h3 height="100% ">
-                      Princesa Mononoke
-                    </h3>
-                    <div class="col-12">
-                      <p><span class="section-span">Sinopse:</span> Um príncipe, em busca de uma cura, luta em uma guerra entre a mata e uma colônia mineira. Nesta aventura ele conhece Mononoke.<p>
-                    </div>
-                    <div class="row ">
-                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                        <p><span class="section-span">Direção:</span> Hayao Miyazaki</p>
-                      </div>
-                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                        <p><span class="section-span">Roteiro:</span> Hayao Miyazaki</p>
-                      </div>
-                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                        <p><span class="section-span">Estreia:</span> 25/12/1999</p>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <p><span class="section-span">Elenco:</span> <br> Gillian Anderson, Claire Danes, Pamela Adlon</p>
-                    </div>
-                    <div class="col-12">
-                      <p><span class="section-span">Avaliação:</span> ★★★☆☆</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div id="pesquisa-filme-container" class="container">
+      <section>
+        <div class="row" id="lista-pesquisa">
+           
         </div>
+      </section>
+      
     </div>
-    </section>
-  </div>
-  </div>
-  <!--
-      =============================================================================
-      =================================highlighted=================================
-      =============================================================================
-    -->
-  <div class="container">
-    <section class="page-section" id="section-highlighted">
-      <!--Botão destaque-->
-      <div class="container">
-        <div class="row">
-          <div class="col-6">
-            <h2 class="section-title destaques" id="destaques">Em destaque</h2>
-          </div>
-          <div class="col-3">&nbsp;</div>
-          <div class="col-3 align-self-end">
-            <select class="form-select form-select category-select" style="margin-bottom: 1.5rem;" aria-label=".form-select-lg example">
-              <option value="0" selected>Todos</option>
-              <option value="1">Aventura</option>
-              <option value="2">Romance</option>
-              <option value="3">Comédia</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      <!--Lista de Filmes-->
-      <div class="container">
-        <div class="row" id="lista-destaques">
-          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-            <div class="card film-card" width="100%">
-              <img src="img/films/A-Cabana.webp" class="card-img-top" alt="A Cabana">
-              <div class="card-body">
-                <p class="card-text"><b>A Cabana</b></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-            <div class="card film-card" width="100%">
-              <img src="img/films/A-Menina-Que-Roubava-Livros.jpg" class="card-img-top"
-                alt="A Menina que Roubava Livros">
-              <div class="card-body">
-                <p class="card-text"><b>A Menina que Roubava Livros</b></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-            <div class="card film-card" width="100%">
-              <img src="img/films/Encare-A-Musica.jpg" class="card-img-top" alt="Encare a Musica">
-              <div class="card-body">
-                <p class="card-text"><b>Encare a Música</b></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-            <div class="card film-card" width="100%">
-              <img src="img/films/tusk.jpg" class="card-img-top" alt="Tusk">
-              <div class="card-body">
-                <p class="card-text"><b>Tusk</b></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Carregar mais-->
-      <div class="container" style="text-align: right; margin-top: 10px;">
-        <div class="row">
-          <div class="col-12">
-            <button type="button" class="btn btn-sm section-btn" onclick="carregarMais()" id="btnCarregaMaisDestaque">+ Carregar mais filmes</button>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
 
-  <!--
-      =============================================================================
-      =================================user rating=================================
-      =============================================================================
-     -->
-  <div class="container">
-    <section class="page-section" id="section-rating">
+    <div id="main-page">
+      <div class="home-background">
       <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="section-title rating" id="rating">Últimas avaliações</h2>
+        <section class="page-section text-start pt-0" id="section-release">
+          <h2 class="section-title">Lançamentos</h2>
+          <div class="row">
+            <div id="carousel-releases" class="carousel carousel-gallery slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-releases" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-releases" data-bs-slide-to="1" aria-label="Slide 2" />
+                <button type="button" data-bs-target="#carousel-releases" data-bs-slide-to="2" aria-label="Slide 3" />
+                <button type="button" data-bs-target="#carousel-releases" data-bs-slide-to="3" aria-label="Slide 4" />
+                <button type="button" data-bs-target="#carousel-releases" data-bs-slide-to="4" aria-label="Slide 5" />
+              </div>
+              <!-- 1 Filme -->
+              <div class="carousel-inner">
+                <div class="carousel-item active" id="first">
+                  <div class="row" style="margin-bottom: 35px;">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6" style="height: 400px;">
+                      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/eGR1i-0l878"
+                        title="Pink Flamingos" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 film-description" >
+                      <h3 height="100% ">
+                        Pink Flamingos
+                      </h3>
+                      <div class="col-12">
+                        <p><span class="section-span">Sinopse:</span> Divine, seu louco filho hippie Crackers e sua obesa mãe
+                          ostentam honrosa e orgulhosamente o título de "pessoas mais imundas do mundo". Quando o reinado
+                          é ameaçado pelo casal Connie e Raymond Marble, eles tentam de todas as formas provar serem os
+                          legítimos merecedores da classificação, iniciando uma bizarra competição sem limites.</p>
+                      </div>
+                      <div class="row ">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                          <p><span class="section-span">Direção:</span> John Waters </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                          <p><span class="section-span">Roteiro:</span> John Waters</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                          <p><span class="section-span">Estreia:</span> 17/03/1972</p>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <p><span class="section-span">Elenco:</span> <br> John Waters, Divine, Mink</p>
+                      </div>
+                      <div class="col-12">
+                        <p><span class="section-span">Avaliação:</span> ★★★☆☆</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Segundo filme-->
+                <div class="carousel-item" id="second">
+                  <div class="row" style="margin-bottom: 35px;">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6" style="height: 400px;">
+                      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/wqbZlAEUb5w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 film-description">
+                      <h3 height="100% ">
+                        The House
+                      </h3>
+                      <div class="col-12">
+                        <p><span class="section-span">Sinopse:</span> The House é uma série da Netflix que é, na verdade, apenas um longo episódio de 1:37 horas. O filme/seriado é dividido em três capítulos completamente diferentes do outro, mas com um elemento em comum: uma casa. O primeiro capítulo é situado em 1800, onde o pobre Raymond conhece um misterioso benfeitor que promete restaurar ele e sua família ao seu antigo status.</p>
+                      </div>
+                      <div class="row ">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                          <p><span class="section-span">Direção:</span> Emma de Swaef, Niki Lindroth Von Bahr, Paloma Baeza</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                          <p><span class="section-span">Roteiro:</span> Enda Walsh</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                          <p><span class="section-span">Estreia:</span> 2022</p>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <p><span class="section-span">Elenco:</span> <br> Helena Bonham Carter, Matthew Goode, Claudie Blakley</p>
+                      </div>
+                      <div class="col-12">
+                        <p><span class="section-span">Avaliação:</span> ★★★★★</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Terceiro filme-->
+                <div class="carousel-item" id="third">
+                  <div class="row" style="margin-bottom: 35px;">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6" style="height: 400px;">
+                      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AfPqH9ltHgw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 film-description" >
+                      <h3 height="100% ">
+                        Turma da Mônica - Uma Aventura no Tempo
+                      </h3>
+                      <div class="col-12">
+                        <p><span class="section-span">Sinopse:</span> Franjinha está construindo uma máquina do tempo e precisa reunir moléculas dos quatro elementos: ar, água, fogo e terra. Mônica joga Sansão e, sem querer, acerta o aparelho, espalhando os elementos. Agora a turma precisa consertá-la.</p>
+                      </div>
+                      <div class="row ">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                          <p><span class="section-span">Direção:</span>  Mauricio de Sousa</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                          <p><span class="section-span">Roteiro:</span>  Mauricio de Sousa</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                          <p><span class="section-span">Estreia:</span> 18/02/2007</p>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <p><span class="section-span">Elenco:</span> <br> Helena Bonham Carter, Matthew Goode, Claudie Blakley</p>
+                      </div>
+                      <div class="col-12">
+                        <p><span class="section-span">Avaliação:</span> ★★★★☆</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Quarto filme-->
+                <div class="carousel-item" id="third">
+                  <div class="row" style="margin-bottom: 35px;">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6" style="height: 400px;">
+                      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/GZfuWMDEJpw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 film-description" >
+                      <h3 height="100% ">
+                        Evangelion: 3.0+1.0 Thrice Upon a Time
+                      </h3>
+                      <div class="col-12">
+                        <p><span class="section-span">Sinopse:</span> Depois de perder a vontade de viver, Shinji Ikari renasce e aprende o significado da esperança. A WILLE se posiciona para impedir o Impacto Final.</p>
+                      </div>
+                      <div class="row ">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                          <p><span class="section-span">Direção:</span> Hideaki Anno, Kazuya Tsurumaki</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                          <p><span class="section-span">Roteiro:</span> Hideaki Anno</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                          <p><span class="section-span">Estreia:</span> 08/03/2021</p>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <p><span class="section-span">Elenco:</span> <br> Megumi Hayashibara, Megumi Ogata, Yûko Miyamura</p>
+                      </div>
+                      <div class="col-12">
+                        <p><span class="section-span">Avaliação:</span> ★★★☆☆</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Quinto filme-->
+                <div class="carousel-item" id="third">
+                  <div class="row" style="margin-bottom: 35px;">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6" style="height: 400px;">
+                      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/4OiMOHRDs14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 film-description" >
+                      <h3 height="100% ">
+                        Princesa Mononoke
+                      </h3>
+                      <div class="col-12">
+                        <p><span class="section-span">Sinopse:</span> Um príncipe, em busca de uma cura, luta em uma guerra entre a mata e uma colônia mineira. Nesta aventura ele conhece Mononoke.<p>
+                      </div>
+                      <div class="row ">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                          <p><span class="section-span">Direção:</span> Hayao Miyazaki</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                          <p><span class="section-span">Roteiro:</span> Hayao Miyazaki</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                          <p><span class="section-span">Estreia:</span> 25/12/1999</p>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <p><span class="section-span">Elenco:</span> <br> Gillian Anderson, Claire Danes, Pamela Adlon</p>
+                      </div>
+                      <div class="col-12">
+                        <p><span class="section-span">Avaliação:</span> ★★★☆☆</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-12 col-md-4">
-                  <img src="img/person/person1.webp" />
-                </div>
-                <div class="col-sm-12 col-md-8">
-                  <h6>Piêtra</h6>
-                  <p><span class="section-span">Avaliação: </span>o filme as Aventuras de PI não tem ambições significativas para lá de contar a sua história.</p>
-                  <p>★★★☆☆ - 11/04/2022</p>
-                </div>
-              </div>
+      </section>
+    </div>
+    <!--
+        =============================================================================
+        =================================highlighted=================================
+        =============================================================================
+      -->
+    <div class="container">
+      <section class="page-section" id="section-highlighted">
+        <!--Botão destaque-->
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h2 class="section-title destaques" id="destaques">Em destaque</h2>
             </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-12 col-md-4">
-                  <img src="img/person/person2.jpg" />
-                </div>
-                <div class="col-sm-12 col-md-8">
-                  <h6>Roberto</h6>
-                  <p><span class="section-span">Avaliação:</span> Morbius é um daqueles filmes que não se encaixa numa única gaveta</p>
-                  <p>★★★★★ - 11/04/2022</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-12 col-md-4">
-                  <img src="img/person/person3.jpg" />
-                </div>
-                <div class="col-sm-12 col-md-8">
-                  <h6>Robson</h6>
-                  <p><span class="section-span">Avaliação:</span> o miúdo de doze anos espantosamente interpretado por Tom Cruise</p>
-                  <p>★★★★☆ - 11/04/2022</p>
-                </div>
-              </div>
+            <div class="col-3">&nbsp;</div>
+            <div class="col-3 align-self-end">
+              <select class="form-select form-select category-select" style="margin-bottom: 1.5rem;" aria-label=".form-select-lg example">
+                <option value="0" selected>Todos</option>
+                <option value="1">Aventura</option>
+                <option value="2">Romance</option>
+                <option value="3">Comédia</option>
+              </select>
             </div>
           </div>
         </div>
-      </div>
-      <div class="container" style="text-align: right; margin-top: 10px;">
-        <div class="row">
-          <div class="col-12">
-            <button type="button" class="btn btn-sm section-btn">+ Carregar mais avaliações</button>
+        <!--Lista de Filmes-->
+        <div class="container">
+          <div class="row" id="lista-destaques">
+           
           </div>
         </div>
-      </div>
-
-    </section>
-  </div>
-  <!--
-    ==========================================================================
-    ==========================Interviews======================================
-    ==========================================================================
-  -->
-  <div class="pre-gradient-background">&nbsp;</div>
-  <div class="gradient">
-    <section class="page-section" id="section-interview">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="section-title interview-title" id="news-title">Entrevistas & Making Of</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12 col-sm-12 col-md-6 col-lg-4 interview-container">
-            <div class="container">
-              <iframe width="100%" height="100%" style="min-height: 240px;"  src="https://www.youtube.com/embed/On8S4X_j5Io" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <h5 style="margin-bottom: 1rem;"><span class="section-span">Filme: </span>The Batman</h5>
-              <p style="margin-bottom: 0px;"><span class="section-span">Diretor: </span>Matt Reeves</p>
-              <div class="row" >
-                <div class="col-sm-12 col-sm-12 col-md-8 col-xl-8">
-                  <p style="margin-bottom: 0px;"><span class="section-span">Roteiro: </span>Matt Reeves, Peter Craig</p>
-                </div>
-                <div class="col-sm-12 col-sm-12 col-md-4 col-xl-4">
-                  <p><span class="section-span">Estreia: </span>03/2022</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-sm-12 col-md-6 col-lg-4 interview-container">
-            <div class="container">
-              <iframe width="100%" height="100%" style="min-height: 240px;"  src="https://www.youtube.com/embed/1T0Dr8GIyCE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <h5 style="margin-bottom: 1rem;"><span class="section-span">Filme: </span>Morbius</h5>
-              <p style="margin-bottom: 0px;"><span class="section-span">Diretor: </span>Daniel Espinosa</p>
-              <div class="row" >
-                <div class="col-sm-12 col-sm-12 col-md-8 col-xl-8">
-                  <p style="margin-bottom: 0px;"><span class="section-span">Roteiro: </span>Burk Sharpless, Roy Thomas</p>
-                </div>
-                <div class="col-sm-12 col-sm-12 col-md-4 col-xl-4">
-                  <p><span class="section-span">Estreia: </span>03/2022</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-sm-12 col-md-6 col-lg-4 interview-container">
-            <div class="container">
-              <iframe width="100%" height="100%" style="min-height: 240px;"  src="https://www.youtube.com/embed/ZFiAh62I4rw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <h5 style="margin-bottom: 1rem;"><span class="section-span">Filme: </span>Uncharted: Fora do Mapa</h5>
-              <p style="margin-bottom: 0px;"><span class="section-span">Diretor: </span>Ruben Fleischer</p>
-              <div class="row" >
-                <div class="col-sm-12 col-sm-12 col-md-8 col-xl-8">
-                  <p style="margin-bottom: 0px;"><span class="section-span">Roteiro: </span>Rafe Judkins, Art Marcum</p>
-                </div>
-                <div class="col-sm-12 col-sm-12 col-md-4 col-xl-4">
-                  <p><span class="section-span">Estreia: </span>02/2022</p>
-                </div>
-              </div>
+        <!--Carregar mais-->
+        <div class="container" style="text-align: right; margin-top: 10px;">
+          <div class="row">
+            <div class="col-12">
+              <button type="button" class="btn btn-sm section-btn" onclick="carregarMais()" id="btnCarregaMaisDestaque">+ Carregar mais filmes</button>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </div>
+      </section>
+    </div>
 
-  <!--
-      =============================================================================
-      =================================NEWS========================================
-      =============================================================================
-    -->
-  <div class="container">
-    <section class="page-section" id="section-news">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
-            <h2 class="section-title news-title" id="news-title">Novidades</h2>
-            <div class="container">
-              <div class="row" style="margin-bottom: 1.5rem;">
-                <div class="col-xs-12 col-11 col-md-4 ">
-                  <img width="100%" src="img/films/Halo-5.webp" alt="Halo 5">
-                </div>
-                <div class="col-xs-12 col-12 col-md-6 ">
-                  <h5>Halo 4</h5>
-                  <p class="news-description">Halo 4: Forward Unto Dawn é uma web série de ficção científica baseado no universo da franquia Halo. Forward Unto Dawn se consiste em cinco episódios de 15 minutos cada lançados semanalmente, se iniciando em 5 de outubro de 2012, e mais tarde lançado como um único filme em DVD e Blu-Ray.</p>
-                  <span class="badge bg-dark news-badge">Games</span><span class="badge bg-dark news-badge">Ficção</span>
-                </div>
-              </div>
-            </div>
-            <div class="container">
-              <div class="row" id="medium-news">
-                <div class="col-xs-12 col-11 col-md-4">
-                  <img width="100%" src="img/films/morbius.jpg" alt="Morbius">
-                </div>
-                <div class="col-xs-12 col-12 col-md-6">
-                  <h5>Morbius</h5>
-                  <p class="news-description">Um dos personagens mais interessantes e conflituosos da Marvel chega à tela grande com o vencedor do Oscar Jared Leto se transformando no enigmático anti-herói Michael Morbius.</p>
-                  <span class="badge bg-dark news-badge">Terror</span><span class="badge bg-dark news-badge">Ficção</span>
-                </div>
-              </div>
-            </div>
-            <div class="container" id="last-news">
-              <div class="row">
-                <div class="col-xs-12 col-11 col-md-4">
-                  <img width="100%" src="img/films/filme-do-Batman.webp" alt="The Batman">
-                </div>
-                <div class="col-xs-12 col-12 col-md-6">
-                  <h5>The Batman</h5>
-                  <p class="news-description">Após dois anos espreitando as ruas como Batman, Bruce Wayne se encontra nas profundezas mais sombrias de Gotham City. Com poucos aliados confiáveis, o vigilante solitário se estabelece como a personificação da vingança para a população.</p>
-                  <span class="badge bg-dark news-badge">DC</span><span class="badge bg-dark news-badge">Ficção</span>
-                </div>
-              </div>
+    <!--
+        =============================================================================
+        =================================user rating=================================
+        =============================================================================
+      -->
+    <div class="container">
+      <section class="page-section" id="section-rating">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="section-title rating" id="rating">Últimas avaliações</h2>
             </div>
           </div>
-
-          <!--
-                ========================================================
-                =========================ABOUT==========================
-                ========================================================
-              -->
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5">
-            <div class="container">
-              <h2 class="section-title news-title" id="news-about">Sobre</h2>
-              <p>Este site fora produzido como um projeto da matéria de Desenvolvimento de Interfaces Web, e agora é um dos menores serviços de streaming (sem streaming) da América Latina.</p>
-            </div>
-            <div class="container">
-              <h2 class="section-title news-title" id="news-edtorial" style="margin-top: 1rem;">Editorial</h2>
-
-              <p><span class="section-span">Redação: </span>Adoro Cinema</p>
-              <p><span class="section-span">Pesquisa: </span>Adoro Cinema</p>
-              <p><span class="section-span">Gerente geral: </span>Miguel Alves</p>
-            </div>
-            <div class="container">
-              <h5 class="section-title" style="margin-top: 3rem; font-weight: bold; font-size: 1.5rem">redes sociais</h3>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+              <div class="container">
                 <div class="row">
-                  <a class="col-2" href="https://www.facebook.com/miguel.alvesfernandes/"
-                    target="_blank"><i class="fab fa-facebook dark h1"></i></a>
-                  <a class="col-2" href="https://twitter.com/mialfemo" target="_blank"><i
-                      class="fab fa-twitter dark h1"></i></a>
-                  <a class="col-2" href="https://www.instagram.com/mialfemo/"
-                    target="_blank"><i class="fab fa-instagram dark h1"></i></a>
+                  <div class="col-sm-12 col-md-4">
+                    <img src="img/person/person1.webp" />
+                  </div>
+                  <div class="col-sm-12 col-md-8">
+                    <h6>Piêtra</h6>
+                    <p><span class="section-span">Avaliação: </span>o filme as Aventuras de PI não tem ambições significativas para lá de contar a sua história.</p>
+                    <p>★★★☆☆ - 11/04/2022</p>
+                  </div>
                 </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-12 col-md-4">
+                    <img src="img/person/person2.jpg" />
+                  </div>
+                  <div class="col-sm-12 col-md-8">
+                    <h6>Roberto</h6>
+                    <p><span class="section-span">Avaliação:</span> Morbius é um daqueles filmes que não se encaixa numa única gaveta</p>
+                    <p>★★★★★ - 11/04/2022</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-12 col-md-4">
+                    <img src="img/person/person3.jpg" />
+                  </div>
+                  <div class="col-sm-12 col-md-8">
+                    <h6>Robson</h6>
+                    <p><span class="section-span">Avaliação:</span> o miúdo de doze anos espantosamente interpretado por Tom Cruise</p>
+                    <p>★★★★☆ - 11/04/2022</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </div>
+        <div class="container" style="text-align: right; margin-top: 10px;">
+          <div class="row">
+            <div class="col-12">
+              <button type="button" class="btn btn-sm section-btn">+ Carregar mais avaliações</button>
+            </div>
+          </div>
+        </div>
 
+      </section>
+    </div>
+    <!--
+      ==========================================================================
+      ==========================Interviews======================================
+      ==========================================================================
+    -->
+    <div class="pre-gradient-background">&nbsp;</div>
+    <div class="gradient">
+      <section class="page-section" id="section-interview">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="section-title interview-title" id="news-title">Entrevistas & Making Of</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-sm-12 col-md-6 col-lg-4 interview-container">
+              <div class="container">
+                <iframe width="100%" height="100%" style="min-height: 240px;"  src="https://www.youtube.com/embed/On8S4X_j5Io" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h5 style="margin-bottom: 1rem;"><span class="section-span">Filme: </span>The Batman</h5>
+                <p style="margin-bottom: 0px;"><span class="section-span">Diretor: </span>Matt Reeves</p>
+                <div class="row" >
+                  <div class="col-sm-12 col-sm-12 col-md-8 col-xl-8">
+                    <p style="margin-bottom: 0px;"><span class="section-span">Roteiro: </span>Matt Reeves, Peter Craig</p>
+                  </div>
+                  <div class="col-sm-12 col-sm-12 col-md-4 col-xl-4">
+                    <p><span class="section-span">Estreia: </span>03/2022</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-sm-12 col-md-6 col-lg-4 interview-container">
+              <div class="container">
+                <iframe width="100%" height="100%" style="min-height: 240px;"  src="https://www.youtube.com/embed/1T0Dr8GIyCE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h5 style="margin-bottom: 1rem;"><span class="section-span">Filme: </span>Morbius</h5>
+                <p style="margin-bottom: 0px;"><span class="section-span">Diretor: </span>Daniel Espinosa</p>
+                <div class="row" >
+                  <div class="col-sm-12 col-sm-12 col-md-8 col-xl-8">
+                    <p style="margin-bottom: 0px;"><span class="section-span">Roteiro: </span>Burk Sharpless, Roy Thomas</p>
+                  </div>
+                  <div class="col-sm-12 col-sm-12 col-md-4 col-xl-4">
+                    <p><span class="section-span">Estreia: </span>03/2022</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-sm-12 col-md-6 col-lg-4 interview-container">
+              <div class="container">
+                <iframe width="100%" height="100%" style="min-height: 240px;"  src="https://www.youtube.com/embed/ZFiAh62I4rw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h5 style="margin-bottom: 1rem;"><span class="section-span">Filme: </span>Uncharted: Fora do Mapa</h5>
+                <p style="margin-bottom: 0px;"><span class="section-span">Diretor: </span>Ruben Fleischer</p>
+                <div class="row" >
+                  <div class="col-sm-12 col-sm-12 col-md-8 col-xl-8">
+                    <p style="margin-bottom: 0px;"><span class="section-span">Roteiro: </span>Rafe Judkins, Art Marcum</p>
+                  </div>
+                  <div class="col-sm-12 col-sm-12 col-md-4 col-xl-4">
+                    <p><span class="section-span">Estreia: </span>02/2022</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--
+        =============================================================================
+        =================================NEWS========================================
+        =============================================================================
+      -->
+    <div class="container">
+      <section class="page-section" id="section-news">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
+              <h2 class="section-title news-title" id="news-title">Novidades</h2>
+              <div class="container">
+                <div class="row" style="margin-bottom: 1.5rem;">
+                  <div class="col-xs-12 col-11 col-md-4 ">
+                    <img width="100%" src="img/films/Halo-5.webp" alt="Halo 5">
+                  </div>
+                  <div class="col-xs-12 col-12 col-md-6 ">
+                    <h5>Halo 4</h5>
+                    <p class="news-description">Halo 4: Forward Unto Dawn é uma web série de ficção científica baseado no universo da franquia Halo. Forward Unto Dawn se consiste em cinco episódios de 15 minutos cada lançados semanalmente, se iniciando em 5 de outubro de 2012, e mais tarde lançado como um único filme em DVD e Blu-Ray.</p>
+                    <span class="badge bg-dark news-badge">Games</span><span class="badge bg-dark news-badge">Ficção</span>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row" id="medium-news">
+                  <div class="col-xs-12 col-11 col-md-4">
+                    <img width="100%" src="img/films/morbius.jpg" alt="Morbius">
+                  </div>
+                  <div class="col-xs-12 col-12 col-md-6">
+                    <h5>Morbius</h5>
+                    <p class="news-description">Um dos personagens mais interessantes e conflituosos da Marvel chega à tela grande com o vencedor do Oscar Jared Leto se transformando no enigmático anti-herói Michael Morbius.</p>
+                    <span class="badge bg-dark news-badge">Terror</span><span class="badge bg-dark news-badge">Ficção</span>
+                  </div>
+                </div>
+              </div>
+              <div class="container" id="last-news">
+                <div class="row">
+                  <div class="col-xs-12 col-11 col-md-4">
+                    <img width="100%" src="img/films/filme-do-Batman.webp" alt="The Batman">
+                  </div>
+                  <div class="col-xs-12 col-12 col-md-6">
+                    <h5>The Batman</h5>
+                    <p class="news-description">Após dois anos espreitando as ruas como Batman, Bruce Wayne se encontra nas profundezas mais sombrias de Gotham City. Com poucos aliados confiáveis, o vigilante solitário se estabelece como a personificação da vingança para a população.</p>
+                    <span class="badge bg-dark news-badge">DC</span><span class="badge bg-dark news-badge">Ficção</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--
+                  ========================================================
+                  =========================ABOUT==========================
+                  ========================================================
+                -->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5">
+              <div class="container">
+                <h2 class="section-title news-title" id="news-about">Sobre</h2>
+                <p>Este site fora produzido como um projeto da matéria de Desenvolvimento de Interfaces Web, e agora é um dos menores serviços de streaming (sem streaming) da América Latina.</p>
+              </div>
+              <div class="container">
+                <h2 class="section-title news-title" id="news-edtorial" style="margin-top: 1rem;">Editorial</h2>
+
+                <p><span class="section-span">Redação: </span>Adoro Cinema</p>
+                <p><span class="section-span">Pesquisa: </span>Adoro Cinema</p>
+                <p><span class="section-span">Gerente geral: </span>Miguel Alves</p>
+              </div>
+              <div class="container">
+                <h5 class="section-title" style="margin-top: 3rem; font-weight: bold; font-size: 1.5rem">redes sociais</h3>
+                  <div class="row">
+                    <a class="col-2" href="https://www.facebook.com/miguel.alvesfernandes/"
+                      target="_blank"><i class="fab fa-facebook dark h1"></i></a>
+                    <a class="col-2" href="https://twitter.com/mialfemo" target="_blank"><i
+                        class="fab fa-twitter dark h1"></i></a>
+                    <a class="col-2" href="https://www.instagram.com/mialfemo/"
+                      target="_blank"><i class="fab fa-instagram dark h1"></i></a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
   <footer>
     <div class="container">
       <div class="row gy-3 justify-content-evenly align-items-center">
@@ -581,5 +559,6 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="http://jqueryvalidation.org/files/dist/jquery.validate.js"></script>
-<script src="destaque.js"></script>
+<script src="js/destaque.js"></script>
+<script src="js/pesquisa.js"></script>
 </html>
