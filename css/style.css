@@ -109,7 +109,8 @@ a.nav-link:hover {
 }
 
 .leia-btn{
-  background-color: wheat !important; 
+  background-color: #212529 !important;
+    color: white;
 }
 .leia-btn:hover {
     color: var(--dark-red) !important;
@@ -160,9 +161,6 @@ section p, h1, h2, h3, h4, h5, h6, button, select {
 
 #section-highlighted .film-card p{
   font-size: 0.8rem;
-}
-#section-highlighted .film-card:hover{
-  color: var(--dark-red);
 }
 
 
