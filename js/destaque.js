@@ -21,7 +21,7 @@ function filmeDestaque() {
       date = data.results[i].release_date;
       const value = data.results[i].id;
       const valueEncode = encodeURI(value);
-      const link = 'pesquisa.html?q=' + valueEncode;
+      const link = 'detalhe.html?q=' + valueEncode;
       texto += `
       <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 mt-4">
       <div class="card film-card" width="100%">
@@ -52,7 +52,7 @@ function carregarMais(){
     date = data.results[i].release_date;
     const value = data.results[i].id;
     const valueEncode = encodeURI(value);
-    const link = 'pesquisa.html?q=' + valueEncode;
+    const link = 'destaque.html?q=' + valueEncode;
     texto += `
         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 mt-2">
           <div class="card film-card" width="100%">
@@ -77,13 +77,6 @@ function carregarMais(){
   $('#lista-destaques').html(texto);
 }
 
-function pesquisaFilmes() {
-  const value = document.getElementById('campo_pesquisa').value;
-  const valueEncode = encodeURI(value);
-  window.location.href = '../pages/pesquisa.html?q=' + valueEncode;
-}
-
 $(document).ready(function () {
   filmeDestaque();
-  $('#bt_pesquisa').click(pesquisaFilmes);
 });

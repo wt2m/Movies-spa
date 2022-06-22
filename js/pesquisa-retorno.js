@@ -45,11 +45,6 @@ function onLoad() {
   });
 }
 
-function pesquisaFilmes() {
-  const value = document.getElementById('campo_pesquisa').value;
-  const valueEncode = encodeURI(value);
-  const link = window.location.href = '../pages/pesquisa.html?q=' + valueEncode;
-}
 
 window.onload = function () {
   onLoad();

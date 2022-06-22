@@ -18,7 +18,7 @@ function filmeLancamento() {
       date = data.results[i].release_date;
       const value = data.results[i].id;
       const valueEncode = encodeURI(value);
-      const link = 'pesquisa.html?q=' + valueEncode;
+      const link = 'destaque.html?q=' + valueEncode;
       textoButtons += i == 0 
       ? ('<button type="button" data-bs-target="#carousel-releases" data-bs-slide-to="'+i+'" class="active" aria-current="true" aria-label="Slide '+i+'"></button>')
       : ('<button type="button" data-bs-target="#carousel-releases" data-bs-slide-to="'+i+'" class="active" aria-label="Slide '+i+'"></button>')
